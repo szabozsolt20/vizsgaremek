@@ -14,7 +14,7 @@ ___
 Ahhoz, hogy eljussunk az adminisztrációs felületekre, be kell jelenzkezni. Ez  bejelentkező ablakban történő felhasználónév és a jelszó megadásával lehetséges. ( ~~Amennyiben ezekkel nem rendelkezünk lehetőség van regisztrálni a bejelentkezés alatti gomb/linksegítségével.~~ )
 
 ___
-# 2. Főoldal - feladat választás
+# 2. Főoldal - feladatválasztás
 ### Felhasználói történet:
 > _Az adminisztrációs feladat célhalmazának kiválasztása._
 
@@ -29,25 +29,25 @@ ___
 # 3. Aloldalak
 
 ## **Közös jellemzők:**
- ### 1.Felhasználói történet:
+ ### 1. Felhasználói történet:
 > _Az egyes aloldalakon listázva láthatjuk az adminisztrálni kívánt csoport tétetleit._
 
 #### Elfogadási kritérium:
 A táblázatosan megjelenített tételek listái a jellemzőik alapján szűrhető és/vagy rendezhető formában jeleníthetők meg. Innen érhető el új tételek felvitele, törlési, és szerkesztési lehetősége. (Szerkesztésre egyes megjelenített jellemzők (pl. id, kölcsönzési idő...) nem elérhetők.)
 
- ### 2.Felhasználói történet:
+ ### 2. Felhasználói történet:
 > _Az egyes aloldalak tetején gomb segítségével új tételt rögzíthetünk._
 
 #### Elfogadási kritérium:
 A gomb megynomására az adott tétel jellemzőit egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van az adatokat validáltan feltölteni, majd a tételt elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
- ### 3.Felhasználói történet:
+ ### 3. Felhasználói történet:
 > _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gomb segítségével._
 
 #### Elfogadási kritérium:
 A gomb megynomására az adott tételt egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van a szerkeszthető adatokat validáltan módosítani, majd a módosításokat elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
- ### 4.Felhasználói történet:
+ ### 4. Felhasználói történet:
 > _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gomb segítségével._
 
 #### Elfogadási kritérium:
@@ -101,7 +101,6 @@ Táblázatos formában jelenik meg a teljes felhasználói kör(beíratkozott k�
   - Születési hely 
   - Születési idő
   - Lakcím
-  - Elérhető
   - Email (nem kötelező)
   - Telefonszám (nem kötelező)
   - Aktív
@@ -119,12 +118,12 @@ Táblázatos formában jelennek meg a kölcsönzések tulajdonságai, amelynek m
   - Kölcsönző neve
   - Kölcsönzés időpontja
   - Lejárat időpontja
-  - Adatrögzítő
+  - Adatrögzítő könyvtáros
   - Aktív
 
  - ## Események aloldal
  ### Felhasználói történet:
-> _Az oldalon nyomonkövethető a könyvtári működés adminisztrációs eseményei._
+> _Az oldalon nyomonkövethető a könyvtári működés minden adminisztrációs eseménye._
 
 #### Elfogadási kritérium:
 A rendszer minden adatmanipulációs adminisztratív eseményet logol. Az oldalt megnyitva ezen események jelelennek meg a többi aloldalhoz hasonló táblázatos formában. Ezek a tételek nem szerkeszthetők, és nem törölhetők. 
@@ -145,4 +144,5 @@ A projekt célkitűzése az adott körülmények melletti hiánytalan, és tök�
 ---
 ## Témához kapcsolódó linkek
 [Útmutató a könyvtárosi munkához](http://www.somogykszr.hu/userfiles/dokumentumok/KSZR_utmutato.pdf)
+
 [Országos Könyvtári Platform](http://www.oszk.hu/sites/default/files/OKP_K%C3%B6vetelm%C3%A9nyjegyz%C3%A9k.pdf)
