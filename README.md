@@ -42,13 +42,13 @@ A táblázatosan megjelenített tételek listái a jellemzőik alapján szűrhet
 A gomb megynomására az adott tétel jellemzőit egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van az adatokat validáltan feltölteni, majd a tételt elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
  ### 3. Felhasználói történet:
-> _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gomb segítségével._
+> _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gombok segítségével._
 
 #### Elfogadási kritérium:
 A gomb megynomására az adott tételt egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van a szerkeszthető adatokat validáltan módosítani, majd a módosításokat elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
  ### 4. Felhasználói történet:
-> _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gomb segítségével._
+> _Az egyes aloldalakon listázott tételek törölhetők a tétel végén látható gombok segítségével._
 
 #### Elfogadási kritérium:
 A gomb megynomására megerősítő kérdést követően lehetőségünk lesz az adott tétel eltávolítására. A törlést követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
