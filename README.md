@@ -69,9 +69,8 @@ Táblázatos formában jelennek meg a teljes könyvtári állomány tulajdonság
   - Kiadó
   - Év
   - Műfaj
-  - Kölcsönözhető
-  - Elérhető
-  - Előjegyezve
+  - Kikölcsönöző
+  - Helye a katalógusban
   - Aktív
 
   ---
@@ -83,6 +82,7 @@ Táblázatos formában jelennek meg a teljes könyvtári állomány tulajdonság
 Táblázatos formában jelenik meg a könyvtári dolgozók tulajdonságai, amelynek minden egyes tétele szerkeszthető, törölhető a sorvégi gombok segítségével. A táblázat tetején új tétel vihető fel.
 - Látható, és szerkesztésre elérhető tulajdonságok:
   - Név
+  - Felhasználói név(email)
   - Szoba
   - Jogosultsági szint
   - Telefon mellék
@@ -97,6 +97,7 @@ Táblázatos formában jelenik meg a könyvtári dolgozók tulajdonságai, amely
 Táblázatos formában jelenik meg a teljes felhasználói kör(beíratkozott kölcsönzők) tulajdonságai, amelynek minden egyes tétele szerkeszthető, törölhető a sorvégi gombok segítségével. A táblázat tetején új tétel vihető fel.
 - Látható, és szerkesztésre elérhető tulajdonságok:
   - Név 
+  - Tagszám
   - Anyja neve
   - Születési hely 
   - Születési idő

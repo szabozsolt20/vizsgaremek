@@ -1,11 +1,15 @@
-const express = require('express');
+require('dotenv').config(); // Itt már elhagyható?
+const config = require('config'); // Itt már elhagyható?
 
-const app = express();
-const port = 3000;
+const logger = require('./config/logger');
+const app = require('./server');
+const port = process.env.PORT || 3000  // legyen, ami az .env-ben van megadva, vagy 3000
 
-app.get('/', (req, res) => { // Ez írja le, mi történjen, ha kap egy kérést a szerverünk, amit az app-ban létrehoztunk
-  res.send('<h1>Hello World!</h1>');
-});
+// Database connect. 2022.05.26. konzin kicsit másabb az előzmény is.
+if (!config.has('database')) { 
+  logger.error("Nincs db config.");
+  process.exit();
+}
 
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
