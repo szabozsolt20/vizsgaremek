@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const userService = require('../controllers/user/user.service');
+const userService = require('../controllers/librarian/librarian.service');
 
 let Users = [];
 (async () => Users = await userService.find())(); // letöltöm Users[]-be a MongoDB-s users kollekciót
