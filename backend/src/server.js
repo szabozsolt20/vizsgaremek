@@ -27,6 +27,11 @@ const authencticateJwt = require('./model/auth/authenticate');
 app.use('/product', authencticateJwt, require('./controller/product/router'));
 app.use('/login', require('./controller/login/router'));
 
+// SEED
+app.use('/seed', require('./controller/seeds/routes'));
+
+
+
 app.use('/', (req, res) => {
     console.log(req.url);
     res.send('api server');
