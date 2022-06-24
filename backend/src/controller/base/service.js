@@ -30,7 +30,11 @@ module.exports = (model, populateList = []) => {
                 return model.findById(saved._id);  // return model.findById(newEntity._id);
             }
             throw new Error(error);
+        },
+        delete: async (id) => {
+            return await model.findByIdAndDelete(id);
         }
+
     };
 };
 
@@ -50,3 +54,21 @@ module.exports = (model, populateList = []) => {
 //         }
 //     };
 // };
+
+/*
+fetch('http://localhost:3000/login', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: '{"email": "test@test.hu", "password": "test789"}',
+}).then(r => r.json())
+    .then( d => console.log(d) );
+*/
+/*
+fetch('http://localhost:3000/user/62b4d90d595e960ad847c46e', {
+    method: 'DELETE',
+    body: '{"email": "test@test.hu", "password": "test789"}',
+}).then(r => r.json())
+    .then( d => console.log(d) );
+*/

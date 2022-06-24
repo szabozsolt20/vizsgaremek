@@ -29,6 +29,23 @@ module.exports = (model, populateList = []) => {
                     res.json(err);
                 });
         },
+        // async delete(req, res, next) {
+        //     try {
+        //         const r = await service.delete(req.params.id);
+        //         return r.json(r);
+        //     } catch (err) {
+        //         res.statusCode = 501;
+        //         res.json(err);
+        //     }
+        // },
+        delete(req, res, next) {
+            return service.delete(req.params.id)
+                .then(r =>console.log(r))
+                .catch(err => {
+                    res.statusCode = 502;
+                    res.json(err);
+                });
+        },
         search(req, res, next) {
             return service.findAll(req.query)
                 .then(list => res.json(list));
