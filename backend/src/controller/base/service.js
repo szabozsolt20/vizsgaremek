@@ -32,7 +32,7 @@ module.exports = (model, populateList = []) => {
             throw new Error(error);
         },
         delete: (id) => {
-            return  model.findByIdAndDelete(id);
+            return  model.findByIdAndDelete(id); // findByIdAndRemove()
         }
 
     };

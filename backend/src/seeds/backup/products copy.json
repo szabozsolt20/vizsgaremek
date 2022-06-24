@@ -1,62 +1,6 @@
-[
-    {
-        "name": "Joe1",
-        "description": "Firpo1",
-        "price": 10012458854,
-        "active": false
-    },
-    {
-        "name": "Jo2",
-        "description": "Firpo2",
-        "price": 10012458854,
-        "active": false
-    },
-    {
-        "name": "Jack1",
-        "description": "Firpo1",
-        "price": 3232323,
-        "active": true
-    },
-    {
-        "name": "Joe3",
-        "description": "Firpo3",
-        "price": 10012458854,
-        "active": false
-    },
-    {
-        "name": "Jack2",
-        "description": "Firpo",
-        "price": 3232323,
-        "active": true
-    },
-    {
-        "name": "Joe4",
-        "description": "Firpo4",
-        "price": 10012458854,
-        "active": false
-    },
-    {
-        "name": "Jack3",
-        "description": "Firpo3",
-        "price": 3232323,
-        "active": true
-    },
-    {
-        "name": "Joe5",
-        "description": "Firpo5",
-        "price": 10012458854,
-        "active": false
-    },
-    {
-        "name": "Jack4",
-        "description": "Firpo4",
-        "price": 3232323,
-        "active": true
-    },
-    {
-        "name": "Jill",
-        "description": "Firpo",
-        "price": 5614561546,
-        "active": true
-    }
-]
+[{
+    "name": "valaki",
+    "description": "valami",
+    "price": 10012458842,
+    "active": false
+}]

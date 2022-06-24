@@ -1,7 +1,7 @@
 {
     "database": {
         "user": "dbUser",
-        "pass": "qW8davwDB9Tptghp",
-        "host": "fapi02-cluster.lvsuq.mongodb.net/?retryWrites=true&w=majority"
+        "pass": "QXoi0LIEi2yByKgu",
+        "host": "fapi02-cluster.gkl3gqj.mongodb.net/JestDB?retryWrites=true&w=majority"
     }
 }

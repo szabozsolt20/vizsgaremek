@@ -29,7 +29,7 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "jest": "^28.1.0",
+    "jest": "^28.1.1",
     "jest-mock-req-res": "^1.0.2"
   }
 }
