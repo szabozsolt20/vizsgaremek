@@ -8,10 +8,10 @@
 ___
 # 1. Bejelentkező ablak: Autentikáció ((Fő)könyvtáros, mint adminisztrátor belépéséhez)
 ### Felhasználói történet:
-> _Bejelentkezési, (~~vagy regisztrációs~~) lehetőség az admin felületek eléréséhez._
+> _Bejelentkezési lehetőség az admin felületek eléréséhez._
 
 #### Elfogadási kritérium:
-Ahhoz, hogy eljussunk az adminisztrációs felületekre, be kell jelenzkezni. Ez  bejelentkező ablakban történő felhasználónév és a jelszó megadásával lehetséges. ( ~~Amennyiben ezekkel nem rendelkezünk lehetőség van regisztrálni a bejelentkezés alatti gomb/linksegítségével.~~ )
+Ahhoz, hogy eljussunk az adminisztrációs felületekre, be kell jelentkezni. Ez  bejelentkező ablakban történő felhasználónév és a jelszó megadásával lehetséges.
 
 ___
 # 2. Főoldal - feladatválasztás
@@ -30,7 +30,7 @@ ___
 
 ## **Közös jellemzők:**
  ### 1. Felhasználói történet:
-> _Az egyes aloldalakon listázva láthatjuk az adminisztrálni kívánt csoport tétetleit._
+> _Az egyes aloldalakon listázva láthatjuk az adminisztrálni kívánt csoport tételeit._
 
 #### Elfogadási kritérium:
 A táblázatosan megjelenített tételek listái a jellemzőik alapján szűrhető és/vagy rendezhető formában jeleníthetők meg. Innen érhető el új tételek felvitele, törlési, és szerkesztési lehetősége. (Szerkesztésre egyes megjelenített jellemzők (pl. id, kölcsönzési idő...) nem elérhetők.)
@@ -39,13 +39,13 @@ A táblázatosan megjelenített tételek listái a jellemzőik alapján szűrhet
 > _Az egyes aloldalak tetején gomb segítségével új tételt rögzíthetünk._
 
 #### Elfogadási kritérium:
-A gomb megynomására az adott tétel jellemzőit egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van az adatokat validáltan feltölteni, majd a tételt elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
+A gomb megnyomására az adott tétel jellemzőit egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van az adatokat validáltan feltölteni, majd a tételt elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
  ### 3. Felhasználói történet:
 > _Az egyes aloldalakon listázott tételek szerkeszthetők a tétel végén látható gombok segítségével._
 
 #### Elfogadási kritérium:
-A gomb megynomására az adott tételt egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van a szerkeszthető adatokat validáltan módosítani, majd a módosításokat elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
+A gomb megnyomására az adott tételt egyedileg megjelenítő lapra navigálunk, ahol lehetőségünk van a szerkeszthető adatokat validáltan módosítani, majd a módosításokat elfogadni, vagy elvetni. A módosítást követően visszajutunk az immár frissített adatokat tartalmazó aloldalra.
 
  ### 4. Felhasználói történet:
 > _Az egyes aloldalakon listázott tételek törölhetők a tétel végén látható gombok segítségével._
@@ -91,13 +91,12 @@ Táblázatos formában jelenik meg a könyvtári dolgozók tulajdonságai, amely
 ---
   - ## Kölcsönzők alapadatai (CRUD) aloldal
  ### Felhasználói történet:
-> _Az oldalon listázva láthatjuk a beíratkozott felhasználók(kölcsönzők) állományát._
+> _Az oldalon listázva láthatjuk a beiratkozott felhasználók(kölcsönzők) állományát._
 
 #### Elfogadási kritérium:
-Táblázatos formában jelenik meg a teljes felhasználói kör(beíratkozott kölcsönzők) tulajdonságai, amelynek minden egyes tétele szerkeszthető, törölhető a sorvégi gombok segítségével. A táblázat tetején új tétel vihető fel.
+Táblázatos formában jelenik meg a teljes felhasználói kör(beiratkozott kölcsönzők) tulajdonságai, amelynek minden egyes tétele szerkeszthető, törölhető a sorvégi gombok segítségével. A táblázat tetején új tétel vihető fel.
 - Látható, és szerkesztésre elérhető tulajdonságok:
   - Név 
-  - Tagszám
   - Anyja neve
   - Születési hely 
   - Születési idő
@@ -124,10 +123,10 @@ Táblázatos formában jelennek meg a kölcsönzések tulajdonságai, amelynek m
 
  - ## Események aloldal
  ### Felhasználói történet:
-> _Az oldalon nyomonkövethető a könyvtári működés minden adminisztrációs eseménye._
+> _Az oldalon nyomon követhető a könyvtári működés minden adminisztrációs eseménye._
 
 #### Elfogadási kritérium:
-A rendszer minden adatmanipulációs adminisztratív eseményet logol. Az oldalt megnyitva ezen események jelelennek meg a többi aloldalhoz hasonló táblázatos formában. Ezek a tételek nem szerkeszthetők, és nem törölhetők. 
+A rendszer minden adatmanipulációs adminisztratív eseményt logol. Az oldalt megnyitva ezen események jelennek meg a többi aloldalhoz hasonló táblázatos formában. Ezek a tételek nem szerkeszthetők, és nem törölhetők. 
 
 ***
 ***
