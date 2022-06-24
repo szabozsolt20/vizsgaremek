@@ -15,7 +15,11 @@ export class ConfigService {
   sidebarMenu: IMenuItem[] = [
     {link: '/', title: 'Dashboard', icon: 'home'},
     {link: '/product', title: 'Products', icon: 'archive'},
-    {link: '/order', title: 'Orders', icon: 'edit2'},
+    {link: '/book', title: 'Books', icon: 'edit2'},
+    {link: '/borrow', title: 'Borrows', icon: 'edit2'},
+    {link: '/librarian', title: 'Librarians', icon: 'edit2'},
+    {link: '/member', title: 'Members', icon: 'edit2'},
+    {link: '/user', title: 'Users', icon: 'edit2'},
   ];
 
   productTableColumns: INgxTableColumn[] = [
