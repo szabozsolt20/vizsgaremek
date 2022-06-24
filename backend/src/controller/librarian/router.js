@@ -21,20 +21,12 @@ router.patch('/:id', (req, res, next) => {
 
 // post
 router.post('/', (req, res, next) => {
-    
     return controller.create(req, res, next);
+});
+
+router.delete('/:id', (req, res, next) => {
+    return controller.delete(req, res, next);
 });
 
 
 module.exports = router;
-
-/*
-fetch('http://localhost:3000/product', {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${temp1.accessToken}`
-    },
-}).then(r => r.json())
-    .then( d => console.log(d) );
-*/

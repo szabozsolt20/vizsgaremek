@@ -31,8 +31,8 @@ module.exports = (model, populateList = []) => {
             }
             throw new Error(error);
         },
-        delete: async (id) => {
-            return await model.findByIdAndDelete(id);
+        delete: (id) => {
+            return  model.findByIdAndDelete(id);
         }
 
     };
@@ -65,10 +65,33 @@ fetch('http://localhost:3000/login', {
 }).then(r => r.json())
     .then( d => console.log(d) );
 */
+
 /*
-fetch('http://localhost:3000/user/62b4d90d595e960ad847c46e', {
+fetch('http://localhost:3000/librarian', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({name: "Józsi példa", username: "editor", location: 10, role: 3, phone: 734, active: false}),
+}).then(r => r.json())
+    .then( d => console.log(d) );
+
+ */
+
+/*
+fetch('http://localhost:3000/librarian', {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${temp1.accessToken}`
+    },
+}).then(r => r.json())
+    .then( d => console.log(d) );
+*/
+
+/*
+fetch('http://localhost:3000/librarian/62b4d90d595e960ad847c46e', {
     method: 'DELETE',
-    body: '{"email": "test@test.hu", "password": "test789"}',
 }).then(r => r.json())
     .then( d => console.log(d) );
 */
