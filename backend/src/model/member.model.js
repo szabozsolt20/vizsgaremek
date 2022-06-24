@@ -23,6 +23,6 @@ const MemberSchema = mongoose.Schema({
   },
 );
 
-MemberSchema.plugin(idValidator);
+// MemberSchema.plugin(idValidator);
 
 module.exports = mongoose.model('Member', MemberSchema);

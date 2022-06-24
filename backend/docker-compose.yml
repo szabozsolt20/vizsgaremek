@@ -1,0 +1,14 @@
+version: "3"
+services:
+    app:
+        container_name: fapi02_vd
+        build:
+            dockerfile: Dockerfile
+            context: .
+        volumes:
+          - .:/app
+          - ./node_modules:/app/node_modules
+          - ../frontend/dist/vizsgaremek/:/app/public
+        ports:
+          - 3000:3000
+            

@@ -1,0 +1,251 @@
+[{
+  "date": "1623090762",
+  "member_id": "member_id5",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1630179741",
+  "member_id": "member_id3",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1623430308",
+  "member_id": "member_id4",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1646126253",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1637389398",
+  "member_id": "member_id6",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1630755659",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1639546368",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1626853084",
+  "member_id": "member_id2",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1641701581",
+  "member_id": "member_id3",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1650973208",
+  "member_id": "member_id9",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1628360900",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1649289371",
+  "member_id": "member_id3",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1653785479",
+  "member_id": "member_id2",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": true
+}, {
+  "date": "1627502458",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1628950177",
+  "member_id": "member_id5",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1642298365",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1621876226",
+  "member_id": "member_id9",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1645111711",
+  "member_id": "member_id9",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1652425913",
+  "member_id": "member_id3",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1623420195",
+  "member_id": "member_id9",
+  "book_ids": "[b1;  b2]",
+  "active": true
+}, {
+  "date": "1648587393",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1626297763",
+  "member_id": "member_id4",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1633747147",
+  "member_id": "member_id1",
+  "book_ids": "[b1;  b2]",
+  "active": false
+}, {
+  "date": "1619965774",
+  "member_id": "member_id6",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1621262950",
+  "member_id": "member_id9",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1638695400",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1637728542",
+  "member_id": "member_id5",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1642151191",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1652522627",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3]",
+  "active": false
+}, {
+  "date": "1633975029",
+  "member_id": "member_id3",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1625878441",
+  "member_id": "member_id7",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1622545890",
+  "member_id": "member_id7",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": true
+}, {
+  "date": "1647618300",
+  "member_id": "member_id3",
+  "book_ids": "[b1;  b2]",
+  "active": false
+}, {
+  "date": "1647647174",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1653553994",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3]",
+  "active": false
+}, {
+  "date": "1621813591",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1653703377",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1637809726",
+  "member_id": "member_id6",
+  "book_ids": "[b1;  b2]",
+  "active": true
+}, {
+  "date": "1645277649",
+  "member_id": "member_id10",
+  "book_ids": "[b1;  b2]",
+  "active": true
+}, {
+  "date": "1644655434",
+  "member_id": "member_id6",
+  "book_ids": "[b1; b2; b3]",
+  "active": false
+}, {
+  "date": "1638874201",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1631414041",
+  "member_id": "member_id2",
+  "book_ids": "[b1; b2; b3; b4]",
+  "active": false
+}, {
+  "date": "1652498095",
+  "member_id": "member_id5",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1624193469",
+  "member_id": "member_id4",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": true
+}, {
+  "date": "1637932509",
+  "member_id": "member_id10",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1633458207",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1633347121",
+  "member_id": "member_id4",
+  "book_ids": "[b1;  b2]",
+  "active": true
+}, {
+  "date": "1623961839",
+  "member_id": "member_id7",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}, {
+  "date": "1630904253",
+  "member_id": "member_id8",
+  "book_ids": "[b1; b2; b3]",
+  "active": true
+}, {
+  "date": "1618542636",
+  "member_id": "member_id1",
+  "book_ids": "[b1; b2; b3; b4; b5]",
+  "active": false
+}]

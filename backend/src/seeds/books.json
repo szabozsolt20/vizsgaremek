@@ -1,0 +1,1001 @@
+[{
+  "ISBN": "685998595-X",
+  "author": "Estele Argyle",
+  "title": "Foreverland",
+  "publisher": "Realpoint",
+  "year": 1997,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 3,
+  "active": false
+}, {
+  "ISBN": "453910544-2",
+  "author": "Andi Muslim",
+  "title": "Girl of Your Dreams, The (Niña de tus ojos, La)",
+  "publisher": "Topicware",
+  "year": 2010,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 18,
+  "active": true
+}, {
+  "ISBN": "923276998-0",
+  "author": "Terence Davenell",
+  "title": "Box, The",
+  "publisher": "Feedfire",
+  "year": 2011,
+  "genre": "Crime|Thriller",
+  "member_id": null,
+  "location": 28,
+  "active": false
+}, {
+  "ISBN": "065484062-8",
+  "author": "Maighdiln Duggen",
+  "title": "One of Our Aircraft Is Missing",
+  "publisher": "Mita",
+  "year": 1998,
+  "genre": "Action|Drama|War",
+  "member_id": null,
+  "location": 29,
+  "active": true
+}, {
+  "ISBN": "441019540-9",
+  "author": "Torrie Kendred",
+  "title": "Memories (Memorîzu)",
+  "publisher": "Gabtune",
+  "year": 2004,
+  "genre": "Animation|Fantasy|Sci-Fi|Thriller",
+  "member_id": null,
+  "location": 40,
+  "active": true
+}, {
+  "ISBN": "577242987-6",
+  "author": "Sebastien Perfitt",
+  "title": "White Banners",
+  "publisher": "Jaxbean",
+  "year": 1995,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 26,
+  "active": true
+}, {
+  "ISBN": "334413033-1",
+  "author": "Hugh Gianullo",
+  "title": "Keeping the Promise (Sign of the Beaver, The)",
+  "publisher": "Edgetag",
+  "year": 2012,
+  "genre": "Children|Drama",
+  "member_id": null,
+  "location": 4,
+  "active": true
+}, {
+  "ISBN": "117502476-7",
+  "author": "Brigida Maultby",
+  "title": "Last Play at Shea, The",
+  "publisher": "Feednation",
+  "year": 1995,
+  "genre": "Documentary|Musical",
+  "member_id": null,
+  "location": 46,
+  "active": false
+}, {
+  "ISBN": "389777824-6",
+  "author": "Drucie Renneke",
+  "title": "Bank Error in Your Favour (Erreur de la banque en votre faveur)",
+  "publisher": "Rooxo",
+  "year": 2012,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 20,
+  "active": true
+}, {
+  "ISBN": "271206450-X",
+  "author": "Jinny Wingrove",
+  "title": "Haider",
+  "publisher": "Flashspan",
+  "year": 1991,
+  "genre": "Crime|Drama|Romance",
+  "member_id": null,
+  "location": 4,
+  "active": false
+}, {
+  "ISBN": "724276693-1",
+  "author": "Emmalyn Glamart",
+  "title": "Huckleberry Finn",
+  "publisher": "Ooba",
+  "year": 2006,
+  "genre": "Adventure|Musical",
+  "member_id": null,
+  "location": 30,
+  "active": true
+}, {
+  "ISBN": "412163926-X",
+  "author": "Doe Croan",
+  "title": "In a Better World (Hævnen)",
+  "publisher": "Jabbersphere",
+  "year": 2006,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 12,
+  "active": false
+}, {
+  "ISBN": "863537689-7",
+  "author": "Katrina Spyvye",
+  "title": "Catch-22",
+  "publisher": "Fivechat",
+  "year": 1985,
+  "genre": "Comedy|War",
+  "member_id": null,
+  "location": 29,
+  "active": true
+}, {
+  "ISBN": "478655409-X",
+  "author": "Sandie Worcs",
+  "title": "Twin Town",
+  "publisher": "Vidoo",
+  "year": 1986,
+  "genre": "Comedy|Crime",
+  "member_id": null,
+  "location": 17,
+  "active": false
+}, {
+  "ISBN": "430548088-3",
+  "author": "Sylvia Lapthorn",
+  "title": "Crying Game, The",
+  "publisher": "Digitube",
+  "year": 2004,
+  "genre": "Drama|Romance|Thriller",
+  "member_id": null,
+  "location": 32,
+  "active": false
+}, {
+  "ISBN": "207715004-1",
+  "author": "Hildegaard Connealy",
+  "title": "Park Is Mine, The",
+  "publisher": "Topicstorm",
+  "year": 2008,
+  "genre": "Action|Drama|Thriller",
+  "member_id": null,
+  "location": 14,
+  "active": false
+}, {
+  "ISBN": "545180814-7",
+  "author": "Luce Monson",
+  "title": "Crazy on the Outside",
+  "publisher": "Roombo",
+  "year": 2000,
+  "genre": "Comedy|Crime",
+  "member_id": null,
+  "location": 14,
+  "active": true
+}, {
+  "ISBN": "872680498-0",
+  "author": "Ivory Beneix",
+  "title": "Long Walk Home, The",
+  "publisher": "Devbug",
+  "year": 2005,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 30,
+  "active": false
+}, {
+  "ISBN": "092669331-X",
+  "author": "Carin Slimmon",
+  "title": "Live from Baghdad",
+  "publisher": "Yakijo",
+  "year": 1986,
+  "genre": "Drama|War",
+  "member_id": null,
+  "location": 16,
+  "active": true
+}, {
+  "ISBN": "262615326-5",
+  "author": "Meredithe Daniello",
+  "title": "Softening of the Egg, The (Ägget är löst!)",
+  "publisher": "Photobean",
+  "year": 2011,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 45,
+  "active": false
+}, {
+  "ISBN": "653484128-2",
+  "author": "Lexy Maryott",
+  "title": "Amuck!",
+  "publisher": "Innotype",
+  "year": 2003,
+  "genre": "Drama|Horror|Mystery",
+  "member_id": null,
+  "location": 20,
+  "active": false
+}, {
+  "ISBN": "419332743-4",
+  "author": "Alina Sammars",
+  "title": "Sleeping with Other People",
+  "publisher": "Kaymbo",
+  "year": 1986,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 24,
+  "active": true
+}, {
+  "ISBN": "873046795-0",
+  "author": "Montague Moralee",
+  "title": "The Hallelujah Handshake",
+  "publisher": "Gigabox",
+  "year": 2011,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 27,
+  "active": false
+}, {
+  "ISBN": "777271837-3",
+  "author": "Cyb Nelle",
+  "title": "Deep Rising",
+  "publisher": "Oba",
+  "year": 1996,
+  "genre": "Action|Horror|Sci-Fi",
+  "member_id": null,
+  "location": 41,
+  "active": false
+}, {
+  "ISBN": "892808719-8",
+  "author": "Joseph Tidswell",
+  "title": "Texas",
+  "publisher": "Realblab",
+  "year": 2012,
+  "genre": "Drama|Romance|Western",
+  "member_id": null,
+  "location": 12,
+  "active": true
+}, {
+  "ISBN": "863680400-0",
+  "author": "Rosmunda Duffield",
+  "title": "Pokémon the Movie: White - Victini and Zekrom",
+  "publisher": "Kwilith",
+  "year": 2003,
+  "genre": "Animation",
+  "member_id": null,
+  "location": 45,
+  "active": true
+}, {
+  "ISBN": "646819569-1",
+  "author": "Carey Ellins",
+  "title": "Butchered",
+  "publisher": "Brainbox",
+  "year": 1977,
+  "genre": "Horror",
+  "member_id": null,
+  "location": 46,
+  "active": true
+}, {
+  "ISBN": "739945498-1",
+  "author": "Sholom Kubanek",
+  "title": "The Outsider",
+  "publisher": "Zoomlounge",
+  "year": 2007,
+  "genre": "Action|Crime|Drama",
+  "member_id": null,
+  "location": 36,
+  "active": false
+}, {
+  "ISBN": "156130381-X",
+  "author": "Dorise Baison",
+  "title": "Ernest Goes to Jail",
+  "publisher": "Mycat",
+  "year": 1995,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 25,
+  "active": false
+}, {
+  "ISBN": "639030995-3",
+  "author": "Blondie Filipczynski",
+  "title": "Vito",
+  "publisher": "Edgeclub",
+  "year": 2006,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 46,
+  "active": false
+}, {
+  "ISBN": "366760158-1",
+  "author": "Tedmund Chelam",
+  "title": "Canyon Passage",
+  "publisher": "Aimbo",
+  "year": 1995,
+  "genre": "Action|Romance|Western",
+  "member_id": null,
+  "location": 33,
+  "active": true
+}, {
+  "ISBN": "490536104-4",
+  "author": "Serena Dewitt",
+  "title": "Chicago Massacre: Richard Speck",
+  "publisher": "Eimbee",
+  "year": 1999,
+  "genre": "Crime|Drama|Thriller",
+  "member_id": null,
+  "location": 23,
+  "active": true
+}, {
+  "ISBN": "253565454-7",
+  "author": "Chiquia Lazenby",
+  "title": "Randy and the Mob",
+  "publisher": "Meevee",
+  "year": 1992,
+  "genre": "Comedy|Crime",
+  "member_id": null,
+  "location": 12,
+  "active": true
+}, {
+  "ISBN": "547144073-0",
+  "author": "Westbrooke Brantl",
+  "title": "Oedipus Rex (Edipo re)",
+  "publisher": "Gabcube",
+  "year": 2010,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 12,
+  "active": true
+}, {
+  "ISBN": "065766407-3",
+  "author": "Jerry Coey",
+  "title": "Garden Lovers (Eedenistä pohjoiseen)",
+  "publisher": "Youspan",
+  "year": 2006,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 15,
+  "active": false
+}, {
+  "ISBN": "961578517-2",
+  "author": "Noella McCroft",
+  "title": "Night Tide",
+  "publisher": "Oyope",
+  "year": 2002,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 31,
+  "active": false
+}, {
+  "ISBN": "999472668-4",
+  "author": "Jorgan Ferneley",
+  "title": "Eel, The (Unagi)",
+  "publisher": "Avavee",
+  "year": 2006,
+  "genre": "Drama|Romance",
+  "member_id": null,
+  "location": 41,
+  "active": false
+}, {
+  "ISBN": "271696383-5",
+  "author": "Feodor Temporal",
+  "title": "Dark Girls",
+  "publisher": "Edgeblab",
+  "year": 2009,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 13,
+  "active": false
+}, {
+  "ISBN": "265951932-3",
+  "author": "Lauren Spavon",
+  "title": "Christmas Holiday",
+  "publisher": "Centizu",
+  "year": 2006,
+  "genre": "Drama|Film-Noir",
+  "member_id": null,
+  "location": 29,
+  "active": true
+}, {
+  "ISBN": "909598353-6",
+  "author": "Jon Pranger",
+  "title": "Puncture",
+  "publisher": "Photolist",
+  "year": 2005,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 20,
+  "active": true
+}, {
+  "ISBN": "147721104-7",
+  "author": "Krissie Cranson",
+  "title": "High and Dry",
+  "publisher": "Trilith",
+  "year": 1995,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 4,
+  "active": true
+}, {
+  "ISBN": "775476037-1",
+  "author": "Pasquale Stonelake",
+  "title": "Dragon Eyes",
+  "publisher": "Yotz",
+  "year": 1999,
+  "genre": "Action|Crime|Drama",
+  "member_id": null,
+  "location": 3,
+  "active": true
+}, {
+  "ISBN": "660986674-0",
+  "author": "Rosaleen Rawsthorn",
+  "title": "Curtis's Charm",
+  "publisher": "Quatz",
+  "year": 2011,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 23,
+  "active": true
+}, {
+  "ISBN": "308215504-9",
+  "author": "Osborn Kindleside",
+  "title": "Bride Comes Home, The",
+  "publisher": "Riffwire",
+  "year": 1990,
+  "genre": "Comedy|Romance",
+  "member_id": null,
+  "location": 29,
+  "active": true
+}, {
+  "ISBN": "455292569-5",
+  "author": "Rachele Monini",
+  "title": "American Heist",
+  "publisher": "Realblab",
+  "year": 1998,
+  "genre": "Action",
+  "member_id": null,
+  "location": 1,
+  "active": false
+}, {
+  "ISBN": "176902160-4",
+  "author": "Madison Stener",
+  "title": "Class Trip, The (La classe de neige)",
+  "publisher": "Eazzy",
+  "year": 2005,
+  "genre": "Drama|Mystery",
+  "member_id": null,
+  "location": 29,
+  "active": true
+}, {
+  "ISBN": "912174253-7",
+  "author": "Jaquelyn Greser",
+  "title": "Shepherd",
+  "publisher": "Skimia",
+  "year": 1995,
+  "genre": "Sci-Fi",
+  "member_id": null,
+  "location": 49,
+  "active": false
+}, {
+  "ISBN": "988327356-8",
+  "author": "Cyb Beales",
+  "title": "Leo's Room (Cuarto de Leo, El)",
+  "publisher": "Ailane",
+  "year": 1988,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 1,
+  "active": false
+}, {
+  "ISBN": "380008919-X",
+  "author": "Audry Wintle",
+  "title": "Assassination of a High School President",
+  "publisher": "Gevee",
+  "year": 2004,
+  "genre": "Comedy|Drama|Mystery",
+  "member_id": null,
+  "location": 35,
+  "active": true
+}, {
+  "ISBN": "876977128-6",
+  "author": "Kristin Grabbam",
+  "title": "Blue State",
+  "publisher": "Latz",
+  "year": 2010,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 8,
+  "active": true
+}, {
+  "ISBN": "682583122-4",
+  "author": "Karole Alcalde",
+  "title": "Wagons East",
+  "publisher": "Feedfish",
+  "year": 1996,
+  "genre": "Comedy|Western",
+  "member_id": null,
+  "location": 29,
+  "active": false
+}, {
+  "ISBN": "580113403-4",
+  "author": "Orazio Everton",
+  "title": "Rings",
+  "publisher": "Rhyzio",
+  "year": 2011,
+  "genre": "Horror|Thriller",
+  "member_id": null,
+  "location": 12,
+  "active": false
+}, {
+  "ISBN": "836042967-7",
+  "author": "Winonah Iacomelli",
+  "title": "Captive, The",
+  "publisher": "Gevee",
+  "year": 1989,
+  "genre": "Crime|Drama|Thriller",
+  "member_id": null,
+  "location": 4,
+  "active": false
+}, {
+  "ISBN": "631781904-1",
+  "author": "Billy Ives",
+  "title": "Out 1: Spectre",
+  "publisher": "Oyoloo",
+  "year": 2001,
+  "genre": "Comedy|Drama|Thriller",
+  "member_id": null,
+  "location": 42,
+  "active": true
+}, {
+  "ISBN": "964541944-1",
+  "author": "Nananne Justun",
+  "title": "Strangers on a Train",
+  "publisher": "Thoughtstorm",
+  "year": 1993,
+  "genre": "Crime|Drama|Film-Noir|Thriller",
+  "member_id": null,
+  "location": 2,
+  "active": true
+}, {
+  "ISBN": "282308597-1",
+  "author": "Lana Veld",
+  "title": "Trial of Joan of Arc, The (Procès de Jeanne d'Arc)",
+  "publisher": "Photospace",
+  "year": 2006,
+  "genre": "Drama|War",
+  "member_id": null,
+  "location": 34,
+  "active": false
+}, {
+  "ISBN": "444999530-9",
+  "author": "Eda Topper",
+  "title": "Grown Up Movie Star",
+  "publisher": "Bubblebox",
+  "year": 1992,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 40,
+  "active": false
+}, {
+  "ISBN": "720093572-7",
+  "author": "Elnar Lorriman",
+  "title": "Alien Nation",
+  "publisher": "Skyble",
+  "year": 1998,
+  "genre": "Crime|Drama|Sci-Fi|Thriller",
+  "member_id": null,
+  "location": 50,
+  "active": false
+}, {
+  "ISBN": "649153248-8",
+  "author": "Mycah Bellringer",
+  "title": "Other Side of Bollywood, The",
+  "publisher": "Topdrive",
+  "year": 2011,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 28,
+  "active": true
+}, {
+  "ISBN": "659018980-3",
+  "author": "Zandra Piwell",
+  "title": "Style Wars",
+  "publisher": "Fatz",
+  "year": 2009,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 33,
+  "active": false
+}, {
+  "ISBN": "723249583-8",
+  "author": "Rudie Atty",
+  "title": "In Order of Disappearance (Kraftidioten)",
+  "publisher": "Oyoba",
+  "year": 2008,
+  "genre": "Action|Comedy|Crime|Thriller",
+  "member_id": null,
+  "location": 22,
+  "active": true
+}, {
+  "ISBN": "482988788-5",
+  "author": "Mercy Alecock",
+  "title": "Collapse",
+  "publisher": "Zoombeat",
+  "year": 1993,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 37,
+  "active": true
+}, {
+  "ISBN": "870687800-8",
+  "author": "Bartlet Ullrich",
+  "title": "Steel Dawn",
+  "publisher": "Jabbertype",
+  "year": 2008,
+  "genre": "Action|Sci-Fi",
+  "member_id": null,
+  "location": 24,
+  "active": false
+}, {
+  "ISBN": "019040594-5",
+  "author": "Cherianne Olek",
+  "title": "Rumble in Hong Kong (Nu jing cha) (Heroine, The)",
+  "publisher": "Dabvine",
+  "year": 2007,
+  "genre": "Action|Crime",
+  "member_id": null,
+  "location": 31,
+  "active": false
+}, {
+  "ISBN": "384328750-3",
+  "author": "Spike Outridge",
+  "title": "City, The (Ciudad, La)",
+  "publisher": "Kare",
+  "year": 2006,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 28,
+  "active": false
+}, {
+  "ISBN": "948536994-8",
+  "author": "Teador McAughtrie",
+  "title": "Seance on a Wet Afternoon",
+  "publisher": "Aimbu",
+  "year": 1994,
+  "genre": "Crime|Drama|Thriller",
+  "member_id": null,
+  "location": 35,
+  "active": true
+}, {
+  "ISBN": "124101897-9",
+  "author": "Reube Gernier",
+  "title": "Patterns",
+  "publisher": "Riffpedia",
+  "year": 1992,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 15,
+  "active": false
+}, {
+  "ISBN": "321388459-6",
+  "author": "Munmro Letten",
+  "title": "Dead Ringer",
+  "publisher": "Linktype",
+  "year": 2006,
+  "genre": "Drama|Thriller",
+  "member_id": null,
+  "location": 37,
+  "active": true
+}, {
+  "ISBN": "637887945-1",
+  "author": "Clayson Jendrys",
+  "title": "Cuckoo in a Dark Forest (Kukacka v temném lese) ",
+  "publisher": "Livefish",
+  "year": 1992,
+  "genre": "Drama|War",
+  "member_id": null,
+  "location": 28,
+  "active": false
+}, {
+  "ISBN": "574236090-8",
+  "author": "Mercy Feldbaum",
+  "title": "Last Exorcism Part II, The",
+  "publisher": "Zoonoodle",
+  "year": 2008,
+  "genre": "Horror|Thriller",
+  "member_id": null,
+  "location": 24,
+  "active": true
+}, {
+  "ISBN": "625801177-2",
+  "author": "Isidore Hemms",
+  "title": "SS Camp 5: Women's Hell (SS Lager 5: L'inferno delle donne)",
+  "publisher": "Babbleopia",
+  "year": 2002,
+  "genre": "Drama|Thriller|War",
+  "member_id": null,
+  "location": 3,
+  "active": false
+}, {
+  "ISBN": "865668943-6",
+  "author": "Jobye Grafton-Herbert",
+  "title": "Halloween",
+  "publisher": "Thoughtstorm",
+  "year": 1994,
+  "genre": "Horror",
+  "member_id": null,
+  "location": 29,
+  "active": false
+}, {
+  "ISBN": "650703487-8",
+  "author": "Windham Fulmen",
+  "title": "Internet's Own Boy: The Story of Aaron Swartz, The",
+  "publisher": "Linkbuzz",
+  "year": 1984,
+  "genre": "Documentary",
+  "member_id": null,
+  "location": 39,
+  "active": true
+}, {
+  "ISBN": "746039488-2",
+  "author": "Ingeberg Arnow",
+  "title": "Siberia",
+  "publisher": "Feednation",
+  "year": 1993,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 10,
+  "active": true
+}, {
+  "ISBN": "651476693-5",
+  "author": "Kenyon Chazelas",
+  "title": "Romantic Englishwoman, The",
+  "publisher": "Mycat",
+  "year": 2000,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 7,
+  "active": true
+}, {
+  "ISBN": "639499232-1",
+  "author": "Allyn Findlater",
+  "title": "Redhead from Wyoming, The",
+  "publisher": "Devcast",
+  "year": 2008,
+  "genre": "Western",
+  "member_id": null,
+  "location": 50,
+  "active": true
+}, {
+  "ISBN": "557237274-9",
+  "author": "Lyn Mc Caughen",
+  "title": "The Stranger's Return",
+  "publisher": "Tazzy",
+  "year": 1998,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 19,
+  "active": false
+}, {
+  "ISBN": "660479535-7",
+  "author": "Bernette Stapleford",
+  "title": "Gayby",
+  "publisher": "Voonte",
+  "year": 2000,
+  "genre": "Comedy|Drama",
+  "member_id": null,
+  "location": 14,
+  "active": true
+}, {
+  "ISBN": "173046045-3",
+  "author": "Tiebout Sinson",
+  "title": "Intolerance: Love's Struggle Throughout the Ages",
+  "publisher": "Twinte",
+  "year": 2005,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 46,
+  "active": true
+}, {
+  "ISBN": "244550867-3",
+  "author": "Buddie Semken",
+  "title": "Prisoner of Zenda, The",
+  "publisher": "Tazz",
+  "year": 2007,
+  "genre": "Adventure",
+  "member_id": null,
+  "location": 8,
+  "active": false
+}, {
+  "ISBN": "140459504-X",
+  "author": "Emmaline Hillett",
+  "title": "Voyage to the Prehistoric Planet",
+  "publisher": "Jabbersphere",
+  "year": 2006,
+  "genre": "Adventure|Sci-Fi",
+  "member_id": null,
+  "location": 39,
+  "active": false
+}, {
+  "ISBN": "765531330-X",
+  "author": "Christa Eyer",
+  "title": "Sherlock Jr.",
+  "publisher": "Photobug",
+  "year": 1997,
+  "genre": "Comedy|Fantasy|Romance",
+  "member_id": null,
+  "location": 41,
+  "active": false
+}, {
+  "ISBN": "211508753-4",
+  "author": "Titus Diloway",
+  "title": "Hollow Point",
+  "publisher": "Youbridge",
+  "year": 2001,
+  "genre": "Action|Comedy|Thriller",
+  "member_id": null,
+  "location": 42,
+  "active": true
+}, {
+  "ISBN": "878886879-6",
+  "author": "Victoria Lattos",
+  "title": "Weekend at Bernie's II",
+  "publisher": "Lazz",
+  "year": 2000,
+  "genre": "Adventure|Comedy",
+  "member_id": null,
+  "location": 23,
+  "active": false
+}, {
+  "ISBN": "185898763-6",
+  "author": "Corey Chilles",
+  "title": "Seventh Heaven (Septième ciel, Le)",
+  "publisher": "Babbleset",
+  "year": 1998,
+  "genre": "Drama|Romance",
+  "member_id": null,
+  "location": 35,
+  "active": true
+}, {
+  "ISBN": "491451425-7",
+  "author": "Kathlin Peattie",
+  "title": "Algiers",
+  "publisher": "Meeveo",
+  "year": 2000,
+  "genre": "Drama|Romance",
+  "member_id": null,
+  "location": 15,
+  "active": true
+}, {
+  "ISBN": "975653712-4",
+  "author": "Loren Davidovich",
+  "title": "Bless Me, Ultima",
+  "publisher": "Edgeblab",
+  "year": 2011,
+  "genre": "Drama|War",
+  "member_id": null,
+  "location": 37,
+  "active": true
+}, {
+  "ISBN": "156016942-7",
+  "author": "Barny Elintune",
+  "title": "For a Good Time, Call...",
+  "publisher": "Dablist",
+  "year": 2007,
+  "genre": "Comedy|Drama|Romance",
+  "member_id": null,
+  "location": 19,
+  "active": false
+}, {
+  "ISBN": "839177707-3",
+  "author": "Goldi Rickersey",
+  "title": "Cremaster 3",
+  "publisher": "Ooba",
+  "year": 2008,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 21,
+  "active": true
+}, {
+  "ISBN": "957547380-9",
+  "author": "Maxi Sicily",
+  "title": "After Five in the Jungle (Nach Fünf im Urwald)",
+  "publisher": "Skyba",
+  "year": 2002,
+  "genre": "Comedy|Romance",
+  "member_id": null,
+  "location": 32,
+  "active": false
+}, {
+  "ISBN": "617915376-0",
+  "author": "Maisey Palister",
+  "title": "Dying Swan, The (Umirayushchii lebed)",
+  "publisher": "Demimbu",
+  "year": 2009,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 19,
+  "active": true
+}, {
+  "ISBN": "296976547-0",
+  "author": "Madella Checo",
+  "title": "Sharpe's Gold",
+  "publisher": "Kwinu",
+  "year": 2005,
+  "genre": "Action|Adventure|War",
+  "member_id": null,
+  "location": 39,
+  "active": false
+}, {
+  "ISBN": "259137252-7",
+  "author": "Hastie Gaye",
+  "title": "Point, The",
+  "publisher": "Zoonder",
+  "year": 2006,
+  "genre": "Animation|Children|Fantasy|Musical",
+  "member_id": null,
+  "location": 14,
+  "active": false
+}, {
+  "ISBN": "444889762-1",
+  "author": "Bria Bolzmann",
+  "title": "The Encounter",
+  "publisher": "Quinu",
+  "year": 2001,
+  "genre": "Children|Drama",
+  "member_id": null,
+  "location": 11,
+  "active": true
+}, {
+  "ISBN": "696436603-2",
+  "author": "Ellery Lindegard",
+  "title": "Celebrity",
+  "publisher": "Minyx",
+  "year": 1995,
+  "genre": "Comedy",
+  "member_id": null,
+  "location": 22,
+  "active": false
+}, {
+  "ISBN": "603439161-X",
+  "author": "Katrinka Domerc",
+  "title": "No Regrets for Our Youth (Waga seishun ni kuinashi)",
+  "publisher": "Nlounge",
+  "year": 1999,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 30,
+  "active": false
+}, {
+  "ISBN": "412023186-0",
+  "author": "Kearney Ridge",
+  "title": "Her Highness and the Bellboy",
+  "publisher": "Kwimbee",
+  "year": 1999,
+  "genre": "Comedy|Romance",
+  "member_id": null,
+  "location": 33,
+  "active": true
+}, {
+  "ISBN": "103834747-5",
+  "author": "Lauryn Treeby",
+  "title": "Dangerous Moves (La diagonale du fou)",
+  "publisher": "Thoughtbridge",
+  "year": 2003,
+  "genre": "Drama|Thriller",
+  "member_id": null,
+  "location": 8,
+  "active": false
+}, {
+  "ISBN": "119505975-2",
+  "author": "Siana Newns",
+  "title": "Black on White (Mustaa valkoisella)",
+  "publisher": "Ailane",
+  "year": 2005,
+  "genre": "Drama",
+  "member_id": null,
+  "location": 14,
+  "active": true
+}, {
+  "ISBN": "258493723-9",
+  "author": "Minnnie McKinnell",
+  "title": "Year of the Gun",
+  "publisher": "Flashpoint",
+  "year": 2005,
+  "genre": "Action|Romance|Thriller",
+  "member_id": null,
+  "location": 10,
+  "active": false
+}]

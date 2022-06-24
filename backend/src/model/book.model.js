@@ -19,7 +19,7 @@ const BookSchema = mongoose.Schema({
     timestamps: true
   },
 );
-BookSchema.plugin(idValidator);
+// BookSchema.plugin(idValidator); // most mg nem ellenőrzöm a feltöltés helyességét
 
 module.exports = mongoose.model('Book', BookSchema);
 // 'Book'-néven ezt a BookSchema-t/adatmodellt expotáljuk ki 

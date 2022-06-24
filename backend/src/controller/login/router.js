@@ -1,5 +1,5 @@
 const express = require('express');
-const User = require('../../model/user');
+const User = require('../../model/user.model');
 const jwt = require('jsonwebtoken');
 
 const router = express.Router();
@@ -22,6 +22,23 @@ router.post('/', async (req, res, next) => {
 
     // return res.json({message: 'user created'});
 
+    // const newUser1 = new User({
+    //     email: "dstothert0@instagram.com",
+    //     firstName: "Deina",
+    //     lastName: "Stothert",
+    //     password: "123456"
+    // });
+
+    // try {
+    //     await newUser1.save();
+    // } catch (e) {
+    //     res.statusCode = 401;
+    //     return res.json({ error: 'Database Error!' });
+    // }
+    // console.log(newUser1);
+    // return res.json({ message: 'user created' });
+
+
     const { email, password } = req.body;
     const user = await User.findOne({ email });
 
@@ -29,25 +46,27 @@ router.post('/', async (req, res, next) => {
         return res.sendStatus(401);
     }
 
-    user.comparePassword(password, function(err, isMatch) {
-        if (err) {
-            return res.sendStatus(403);
-        }
+    // user.password = 'test789';
+    await user.save();
 
+    const valid = user.verifyPasswordSync(password);
+    if (valid) {
         const accessToken = jwt.sign({
             _id: user._id,
             email: user.email,
             role: 1,
         }, 'egynagyontitkosszöveg', {
-            expiresIn: '1h',
+            expiresIn: '10 days',
         });
 
-        res.json({ 
-            success: true, 
-            accessToken, 
-            user: {...user._doc, password: ''},
+        res.json({
+            success: true,
+            accessToken,
+            user: { ...user._doc, password: '' },
         });
-    });
+    } else {
+        return res.sendStatus(401);
+    }
 });
 
 module.exports = router;

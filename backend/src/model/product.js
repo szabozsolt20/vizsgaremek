@@ -6,7 +6,7 @@ const ProductSchema = mongoose.Schema({
         required: true,
         validate: {
             validator: function(v) {
-                return /^[a-űA-Ű \d\-\.]{3,25}$/.test(v);
+                return /^[a-űA-Ű _\d\-\.]{5,25}$/.test(v);
             }
         }
     },
@@ -21,6 +21,10 @@ const ProductSchema = mongoose.Schema({
     active: {
         type: Boolean,
         default: true,
+    },
+    category: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Category',
     },
 });
 
