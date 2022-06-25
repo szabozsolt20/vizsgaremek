@@ -3,14 +3,23 @@ const mongoose = require('mongoose');
 const supertest = require('supertest');
 const config = require('config');
 const logger = require('./config/logger');
-const seeder = require('./seeds/seeders');
+// const seeder = require('./seeds/seeders');
+const librarianModel = require('./model/librarian.model');
 
 // const Product = require('./model/product');
 // const { response } = require('jest-mock-req-res');
 // const { Test } = require('supertest');
 
 describe('REST API integration tests', () => {
-    let testCase = 0;
+    const insertData = [{
+        name: "Test Elek",
+        username: "editor",
+        location: 10,
+        role: 3,
+        phone: 999,
+        active: false,
+    }];
+
     beforeEach(done => {
         const { user, pass } = config.get('database');
         mongoose.connect("mongodb+srv://fapi02-cluster.gkl3gqj.mongodb.net/JestDB?retryWrites=true&w=majority", {
@@ -34,10 +43,27 @@ describe('REST API integration tests', () => {
 
     });
 
+    test("GET /librarian/:id", () => {
+        let firstPostId;
+        return librarianModel.insertMany(insertData)
+            .then(librarians => {
+                firstPostId = librarians[0]._id;
+                return supertest(app).get(`/librarian/${firstPostId.toString()}`).expect(200);
+            })
+            .then(response => {
+                // Check data
+                expect(response.body._id).toBe(firstPostId.toString());
+                expect(response.body.name).toBe(insertData[0].name);
+                expect(response.body.username).toBe(insertData[0].username);
+                librarianModel.findByIdAndRemove(firstPostId).then(r => logger.info('Original state restored!'));
+            });
+    });
+
     test('GET /book', done => {
-        supertest(app).get('/product').expect(200)
+        supertest(app).get('/book').expect(200)
             .then(response => {
                 expect(Array.isArray(response.body)).toBeTruthy();
+                expect(response.body.length).toEqual(100);
                 done();
             });
     });
@@ -45,6 +71,7 @@ describe('REST API integration tests', () => {
         supertest(app).get('/borrow').expect(200)
             .then(response => {
                 expect(Array.isArray(response.body)).toBeTruthy();
+                expect(response.body.length).toEqual(50);
                 done();
             });
     });
@@ -52,6 +79,7 @@ describe('REST API integration tests', () => {
         supertest(app).get('/librarian').expect(200)
             .then(response => {
                 expect(Array.isArray(response.body)).toBeTruthy();
+                expect(response.body.length).toEqual(10);
                 done();
             });
     });
@@ -59,6 +87,7 @@ describe('REST API integration tests', () => {
         supertest(app).get('/member').expect(200)
             .then(response => {
                 expect(Array.isArray(response.body)).toBeTruthy();
+                expect(response.body.length).toEqual(100);
                 done();
             });
     });
@@ -66,6 +95,7 @@ describe('REST API integration tests', () => {
         supertest(app).get('/user').expect(200)
             .then(response => {
                 expect(Array.isArray(response.body)).toBeTruthy();
+                expect(response.body.length).toEqual(10);
                 done();
             });
     });
