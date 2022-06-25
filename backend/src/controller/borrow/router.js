@@ -1,6 +1,6 @@
 const express = require('express');
 const Model = require('../../model/borrow.model');
-const controller = require('../base/controller')(Model, ['member_id', 'book_ids']); //, ['category']
+const controller = require('../base/controller')(Model, ['book_ids', 'member_id']);
 
 const router = express.Router();
 

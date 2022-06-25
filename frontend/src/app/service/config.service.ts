@@ -37,7 +37,6 @@ export class ConfigService {
     {key: 'publisher', title: 'Publisher'},
     {key: 'year', title: 'Year'},
     {key: 'genre', title: 'Genre'},
-    {key: 'member_id', title: 'Member'},
     {key: 'location', title: 'Location'},
     {key: 'active', title: 'Active'},
   ];
@@ -69,7 +68,6 @@ export class ConfigService {
     {key: 'birthdate', title: 'Birthdate'},
     {key: 'email', title: 'Email'},
     {key: 'phone', title: 'Phone'},
-    {key: 'book_ids', title: 'Books'},
     {key: 'active', title: 'Active'},
   ];
   userTableColumns: INgxTableColumn[] = [

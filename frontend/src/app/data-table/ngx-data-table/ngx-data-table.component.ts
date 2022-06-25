@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export interface INgxTableColumn { // kiexportálva az ezt felhasználó kompnensek tudják, hogy milyen oszlopokat használok a táblában
   title: string; // fejléce
   key: string; ///adata
+  projector?: Function;
 }
 
 @Component({

@@ -1,6 +1,6 @@
 const express = require('express');
 const Model = require('../../model/member.model');
-const controller = require('../base/controller')(Model, ['book_ids']); //, ['category']
+const controller = require('../base/controller')(Model);
 
 const router = express.Router();
 

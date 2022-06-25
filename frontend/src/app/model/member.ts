@@ -8,6 +8,5 @@ export class Member {
   address: string = '';
   email?: string = '';
   phone?: string = '';
-  book_ids?: string[] = [];
   active: Boolean = true;
 }

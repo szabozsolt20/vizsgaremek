@@ -8,10 +8,6 @@ const BookSchema = mongoose.Schema({
   publisher: String,
   year: Number,
   genre: String,
-  member_id: { // Egy itt egy Member entitás _id-ja lesz. 1-n kapcsolat : 1 member-hez több book is tartozhat. (majd a populate tölti fel a megjelenítéskor.)
-    type: mongoose.Schema.Types.ObjectId, // Tehát egy olyan _id lesz, ami a Member kollekció dokumentumokra mutat.  de lehet hogy a kölcsönzéseket kellene csak nyilvántartani
-    ref: 'Member',
-  },
   location: Number,
   active: Boolean
 },
@@ -19,7 +15,6 @@ const BookSchema = mongoose.Schema({
     timestamps: true
   },
 );
-// BookSchema.plugin(idValidator); // most mg nem ellenőrzöm a feltöltés helyességét
 
 module.exports = mongoose.model('Book', BookSchema);
 // 'Book'-néven ezt a BookSchema-t/adatmodellt expotáljuk ki 

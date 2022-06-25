@@ -6,7 +6,6 @@ export class Book {
   publisher: string = '';
   year: number = 0;
   genre: string = '';
-  member_id?:  string = '';
   location: number = 0;
   active: Boolean =  true
 }
