@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { FeatherModule } from 'angular-feather';
-import { Home, Edit, Edit2, Edit3, Archive } from 'angular-feather/icons';
+import { Home, Users, User, Book, UserCheck, Upload, Archive } from 'angular-feather/icons';
 
 const icons = {
   Home,
-  Edit2,
-  Edit3,
-  Edit,
+  Users,
+  User,
+  Book,
+  UserCheck,
+  Upload,
   Archive,
 };
 
@@ -16,9 +18,9 @@ const icons = {
   declarations: [],
   imports: [
     CommonModule,
-    FeatherModule.pick(icons),
+    FeatherModule.pick(icons), // csak az "icons" -ban felsoroltakat tölti be.
   ],
-  exports: [
+  exports: [ // hogy lássa az alkalmazásom kint is. és IconModule az appmodulba importálva
     FeatherModule,
   ],
 })

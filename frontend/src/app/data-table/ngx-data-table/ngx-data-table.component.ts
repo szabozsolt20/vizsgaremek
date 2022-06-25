@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
-export interface INgxTableColumn {
-  title: string;
-  key: string;
+export interface INgxTableColumn { // kiexportálva az ezt felhasználó kompnensek tudják, hogy milyen oszlopokat használok a táblában
+  title: string; // fejléce
+  key: string; ///adata
 }
 
 @Component({
@@ -10,11 +10,11 @@ export interface INgxTableColumn {
   templateUrl: './ngx-data-table.component.html',
   styleUrls: ['./ngx-data-table.component.scss']
 })
-export class NgxDataTableComponent<T extends {[x: string]: any}> implements OnInit {
+export class NgxDataTableComponent<T extends {[x: string]: any}> implements OnInit { // a szokásos: a kulcsok (indexelhető)stringek, az érték, meg bármi
 
-  @Input() list: T[] = [];
+  @Input() list: T[] = []; // az adatsor, amiket meg akarok jeleníteni: ezt a komnkrét megjelenítést kérő szülő komponenstől kapja
 
-  @Input() columns: INgxTableColumn[] = [];
+  @Input() columns: INgxTableColumn[] = []; // oszlopaim
 
   @Output() onEdit: EventEmitter<T> = new EventEmitter();
 

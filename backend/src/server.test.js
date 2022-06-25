@@ -4,6 +4,7 @@ const supertest = require('supertest');
 const config = require('config');
 const logger = require('./config/logger');
 // const seeder = require('./seeds/seeders');
+// const {response} = require('jest-mock-req-res');
 const librarianModel = require('./model/librarian.model');
 
 // const Product = require('./model/product');
@@ -21,8 +22,8 @@ describe('REST API integration tests', () => {
     }];
 
     beforeEach(done => {
-        const { user, pass } = config.get('database');
-        mongoose.connect("mongodb+srv://fapi02-cluster.gkl3gqj.mongodb.net/JestDB?retryWrites=true&w=majority", {
+        const {host, user, pass } = config.get('database');
+        mongoose.connect(`mongodb+srv://${host}`, {
             user,
             pass,
         }).then(conn => {

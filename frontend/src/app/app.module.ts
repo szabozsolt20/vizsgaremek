@@ -19,6 +19,16 @@ import { AuthService } from './service/auth.service';
 import { ProductEditorComponent } from './page/product-editor/product-editor.component';
 import { FileUploaderComponent } from './common/file-uploader/file-uploader.component';
 import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
+import { BookComponent } from './page/book/book.component';
+import { BookEditorComponent } from './page/book-editor/book-editor.component';
+import { BorrowComponent } from './page/borrow/borrow.component';
+import { BorrowEditorComponent } from './page/borrow-editor/borrow-editor.component';
+import { LibrarianComponent } from './page/librarian/librarian.component';
+import { LibrarianEditorComponent } from './page/librarian-editor/librarian-editor.component';
+import { MemberComponent } from './page/member/member.component';
+import { MemberEditorComponent } from './page/member-editor/member-editor.component';
+import { UserComponent } from './page/user/user.component';
+import { UserEditorComponent } from './page/user-editor/user-editor.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +40,17 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
     OrderComponent,
     LoginComponent,
     ProductEditorComponent,
-    FileUploaderComponent
+    FileUploaderComponent,
+    BookComponent,
+    BookEditorComponent,
+    BorrowComponent,
+    BorrowEditorComponent,
+    LibrarianComponent,
+    LibrarianEditorComponent,
+    MemberComponent,
+    MemberEditorComponent,
+    UserComponent,
+    UserEditorComponent
   ],
   imports: [
     BrowserModule,

@@ -33,7 +33,7 @@ export class ProductComponent implements OnInit {
     this.router.navigate(['/', 'product', 'edit', product._id]);
   }
 
-  createCategories(): void {
+  createCategories(): void { // seed-elés az angular-ból
     combineLatest([ // amikor mindegyik elkészült, összefogja őket
       this.categoryService.create({name: 'Háztartás', description: 'konyhai cuccok'}),
       this.categoryService.create({name: 'Barkács', description: ' barkács cuccok'}),

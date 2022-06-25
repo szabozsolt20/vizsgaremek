@@ -6,7 +6,7 @@ const router = express.Router();
 
 // get
 router.get('/', (req, res, next) => {
-    return controller.findAll(req, res, next);
+    return controller.findAll(req, res, next); // return elhagyható?
 });
 
 router.get('/:id', (req, res, next) => {
