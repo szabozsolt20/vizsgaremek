@@ -8,11 +8,11 @@ module.exports = (model, populateList = []) => {
                         $options: 'i' 
                     };
                 });
-                return model.find(params).populate(...populateList);
+                return model.find(params).populate(...populateList).select("-__v");
             }
-            return model.find(params).populate(...populateList);
+            return model.find(params).populate(...populateList).select("-__v");
         },
-        findOne: (id) => model.findById(id).populate(...populateList),
+        findOne: (id) => model.findById(id).populate(...populateList).select("-__v"),
         updateOne: async (id, body) => {
             //console.log(id, body );
             const newEntity = new model(body);

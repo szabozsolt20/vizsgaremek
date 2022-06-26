@@ -1,6 +1,6 @@
 const express = require('express');
 const Model = require('../../model/borrow.model');
-const controller = require('../base/controller')(Model, ['book_ids', 'member_id']);
+const controller = require('../base/controller')(Model, ['book_ids member_id']);
 
 const router = express.Router();
 
@@ -15,7 +15,7 @@ router.get('/:id', (req, res, next) => {
 
 // patch
 router.patch('/:id', (req, res, next) => {
-  //console.log(req.params.id, req.body);
+
     return controller.updateOne(req, res, next);
 });
 

@@ -5,6 +5,7 @@ import { Borrow } from 'src/app/model/borrow';
 import { CategoryService } from 'src/app/service/category.service';
 import { ConfigService } from 'src/app/service/config.service';
 import { BorrowService } from 'src/app/service/borrow.service';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-borrow',
@@ -14,7 +15,13 @@ import { BorrowService } from 'src/app/service/borrow.service';
 export class BorrowComponent implements OnInit {
   columns = this.config.borrowTableColumns;  // a congfigban lesz minden minden a tála adatszerkezetésől (oszlopok fejléc, és adat tartalma)
 
-  list$ = this.borrowService.getAll();
+  // list$ = this.borrowService.getAll();
+  list$ = this.borrowService.getAll().pipe(map(list => list.map(borrow => {
+    // return {...borrow, member_id: borrow?.member_id.name}
+    return { ...borrow, member_id: "0000000" }
+  }
+
+  )));
 
   categories$ = this.categoryService.getAll();
 

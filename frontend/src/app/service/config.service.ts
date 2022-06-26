@@ -45,6 +45,7 @@ export class ConfigService {
     {key: '_id', title: '#'},
     {key: 'date', title: 'Date'},
     {key: 'member_id', title: 'Member'},
+    // {key: 'member_id', title: 'Member',projector: (row: { member_id: { name: string; }; }) => row.member_id.name,},
     {key: 'book_ids', title: 'Books'},
     {key: 'active', title: 'Active'},
   ];
