@@ -1,15 +1,6 @@
 <h2>Librarian List</h2>
-<!-- Seed-eléshez itt hagyom lehetőségnek -->
-<!-- <div class="row">
-  <div (click)="createCategories()" class="col-12"><button class="btn btn-success">
-    Create Categories
-  </button></div>
-</div> -->
 
 <!-- átadjuk a központi táblakomponensnek a konkrét megjelenítési paramétereit -->
-<ngx-data-table
-  *ngIf="list$ | async as list"
-  [columns]="columns"
-  [list]="list"
-  (onEdit)="startEdit($event)"
-></ngx-data-table>
+<ngx-data-table *ngIf="list$ | async as list" [columns]="columns" [list]="list" (onEdit)="startEdit($event)">
+</ngx-data-table>
+{{list$ | async | json}}

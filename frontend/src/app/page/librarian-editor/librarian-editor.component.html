@@ -1,1 +1,30 @@
 <p>librarian-editor works!</p>
+<ngx-data-table-editor></ngx-data-table-editor>
+
+<form #editForm="ngForm" (ngSubmit)="update(item)" *ngIf="item$ | async as item" class=" col-4">
+
+  <!-- <div class="form-group">
+    <label for="name" class="form-label">Name</label>
+    <input id="name" name="name" [(ngModel)]="item.name" type="text" class="form-control" pattern="[a-űA-Ű \d\.\-\(\)]{5,}"
+      required>
+    <span [hidden]="editForm.controls['name']?.valid" class="error-message">Please fix the field!</span>
+  </div> -->
+
+  <div *ngFor= "let key of keys"  [hidden]="key=='_id'" class="form-group">
+    <label for=key class="form-label">{{key |titlecase}}</label>
+    <input id=key name=key [(ngModel)]="item[key]" type="text" class="form-control" pattern="^[a-űA-Ű \d\.\-\(\)]{5,}$"
+      required>
+    <span [hidden]="editForm.controls[key].valid" class="error-message">Please fix the field!</span>
+  </div>
+
+
+
+  <button [disabled]="editForm.invalid" type="submit" class="btn btn-primary mt-4 w-100">
+    <i class="fa fa-save"> </i>
+  </button>
+
+  <!--
+  {{ item | json}}
+  {{ cat | json}}
+  </div> -->
+</form>

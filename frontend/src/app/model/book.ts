@@ -1,4 +1,5 @@
 export class Book {
+  [key: string]: any;
   _id?: string = '';
   ISBN: string = '';
   author: string = '';

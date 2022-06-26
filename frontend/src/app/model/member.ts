@@ -1,4 +1,5 @@
 export class Member {
+  [key: string]: any;
   _id?: string = '';
   name: string = '';
   uid: number = 0;

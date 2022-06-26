@@ -16,12 +16,10 @@ export class LibrarianComponent implements OnInit {
 
   list$ = this.librarianService.getAll();
 
-  categories$ = this.categoryService.getAll();
 
   constructor(
     private config: ConfigService,
     private librarianService: LibrarianService,
-    private categoryService: CategoryService, // hogy category-kat be tudjunk szúrni
     private router: Router,
   ) { }
 
@@ -31,14 +29,4 @@ export class LibrarianComponent implements OnInit {
     this.router.navigate(['/', 'librarian', 'edit', librarian._id]);
   }
 
-  // Seed-eléshez itt hagyom lehetőségnek
-  // createCategories(): void {
-  //   combineLatest([ // amikor mindegyik elkészült, összefogja őket
-  //     this.categoryService.create({name: 'Háztartás', description: 'konyhai cuccok'}),
-  //     this.categoryService.create({name: 'Barkács', description: ' barkács cuccok'}),
-  //     this.categoryService.create({name: 'Egészség', description: 'mama cuccok'}),
-  //   ]).subscribe(
-  //     () => console.log('Categories have been created.'),
-  //   );
-  // }
 }

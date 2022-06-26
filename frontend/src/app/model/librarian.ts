@@ -1,4 +1,5 @@
 export class Librarian {
+  [key: string]: any;
   _id?: string = '';
   name: string = '';
   username: string = '';
