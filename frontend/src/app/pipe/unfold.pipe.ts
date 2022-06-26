@@ -6,14 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class UnfoldPipe implements PipeTransform {
 
   transform(value: any): string {
-    if (typeof value === 'undefined') return ''
-    if (typeof value !== 'object') return value.toString()
-    const values = Object.values(value)
-    return values.map(value => {
-      if (typeof value === 'object') {
-        return this.transform(value)
-      } else return value
-    }).join(', ')
+    if (typeof value === 'undefined') return '';
+    if ((typeof value !== 'object') && (!Array.isArray(value))) return value.toString();
+    if (value.hasOwnProperty('name')) return value.name;
+    if (Array.isArray(value)) {
+      return value.map(obj => `${obj.author} - ${obj.title}`).join(', and ')
+    }
+    return "";
   }
-
 }

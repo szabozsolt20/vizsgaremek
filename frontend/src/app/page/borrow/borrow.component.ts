@@ -16,12 +16,14 @@ export class BorrowComponent implements OnInit {
   columns = this.config.borrowTableColumns;  // a congfigban lesz minden minden a tála adatszerkezetésől (oszlopok fejléc, és adat tartalma)
 
   // list$ = this.borrowService.getAll();
-  list$ = this.borrowService.getAll().pipe(map(list => list.map(borrow => {
-    // return {...borrow, member_id: borrow?.member_id.name}
-    return { ...borrow, member_id: "0000000" }
-  }
+  list$ = this.borrowService.getAll();
+  //.pipe(map(list => list.map(borrow => {
+  //borrow.(col=> {if (col.projector) {col.key=col.projector(col)}});
+  // return {...borrow, member_id: borrow?.member_id.name}
+  // return borrow;
+  //}
 
-  )));
+  //)));
 
   categories$ = this.categoryService.getAll();
 
