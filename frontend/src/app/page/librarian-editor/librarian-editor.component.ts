@@ -33,6 +33,13 @@ export class LibrarianEditorComponent implements OnInit {
       error: err => console.error(err),
     });
   }
+  create(librarian: Librarian): void {
+    delete librarian._id;
+    this.librarianService.create(librarian).subscribe({
+      next: createdItem => alert('Item created'),
+      error: err => console.error(err),
+    });
+  }
 
 
 }

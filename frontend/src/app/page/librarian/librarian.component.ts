@@ -28,5 +28,11 @@ export class LibrarianComponent implements OnInit {
   startEdit(librarian: Librarian): void {
     this.router.navigate(['/', 'librarian', 'edit', librarian._id]);
   }
+  startDelete(librarian_id: string): void {
+    this.librarianService.delete(librarian_id).subscribe({
+      next: deletedItem => this.list$ = this.librarianService.getAll(),
+      error: err => console.error(err),
+    });
 
+  }
 }

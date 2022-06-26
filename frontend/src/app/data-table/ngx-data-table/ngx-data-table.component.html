@@ -15,7 +15,10 @@
         <td>
           <div class="btn-group">
             <button (click)="raiseEdit(row)" class="btn btn-info">
-              edit
+              <i class="fa fa-plus-square"></i> & <i class="fa fa-pencil"></i>
+            </button>
+            <button (click)="raiseDelete(row['_id'])" class="btn btn-danger">
+              <i class="fa fa-trash"> </i>
             </button>
           </div>
         </td>
@@ -23,6 +26,7 @@
     </tbody>
   </table>
 </div>
+
 <nav aria-label="Page navigation example">
   <ul class="pagination mt-4">
     <li class="page-item"><button

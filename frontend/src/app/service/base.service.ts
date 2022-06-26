@@ -46,4 +46,8 @@ export class BaseService<T extends {_id?: string}> {
     return this.http.get<T[]>(`${this.apiUrl}${this.entityName}/search?${queryString}`);
   }
 
+  delete(id: string): Observable<T> {
+    return this.http.delete<T>(`${this.apiUrl}${this.entityName}/${id}`);
+  }
+
 }
