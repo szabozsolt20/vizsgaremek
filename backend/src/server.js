@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // const fileUpload = require('express-fileupload');
-//const { join } = require('path');
+// const { join } = require('path');
 
 const morgan = require("morgan");
 const logger = require('./config/logger');
@@ -79,16 +79,17 @@ app.use('/book', require('./controller/book/router'));
 app.use('/borrow', require('./controller/borrow/router'));
 app.use('/librarian', require('./controller/librarian/router'));
 app.use('/member', require('./controller/member/router'));
-app.use('/user', require('./controller/user/router'));
+app.use('/user',  require('./controller/user/router'));
 app.use('/login', require('./controller/login/router'));
 
-app.use('/product', require('./controller/product/router'));
-app.use('/category', require('./controller/category/router'));
+// fejlesztési célokra:
+// app.use('/product', require('./controller/product/router'));
+// app.use('/category', require('./controller/category/router'));
 
 // SEED
-app.use('/seed', require('./controller/seeds/routes'));
+app.use('/seed', authenticateJwt, require('./controller/seeds/routes'));
 
-app.use('/', (req, res) => {
+app.use('/',  (req, res) => {
     console.log(req.url);
     res.send('api server');
 });

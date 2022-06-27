@@ -138,7 +138,7 @@ rövid
 A projekt hosszabbtávú célkitűzése a hiánytalan, és tökéletes megvalósítás. - a jövőbeni az adott körülmények melletti melletti hiányosabb megvalósítások továbbfejlesztéssel.😊 Ilyen irányok lehetnek:
  - kisebb lépésekben a beágyazottsági szintek összetettségének növelésével rugalmasabb adatelérési, és CRUD lehetőségek biztosítása,
  - funkcióbővítés az életszerű üzleti logika megvalósítás irányában,
- - bővebb jogosultsági szintek megvalósítása
+ - jogosultsági szintek bővebb megvalósítása
  - keresési és rendezési lehetőséggel bővítés
  - kölcsönzői (members) funkciók megvalósítása
  - dizájn 

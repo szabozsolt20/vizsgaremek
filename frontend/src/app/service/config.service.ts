@@ -20,6 +20,7 @@ export class ConfigService {
     {link: '/librarian', title: 'Librarians', icon: 'user-check'},
     {link: '/member', title: 'Members', icon: 'users'},
     {link: '/user', title: 'Users', icon: 'user'},
+    {link: '/seed', title: 'SEED', icon: 'user'},
   ];
 
   productTableColumns: INgxTableColumn[] = [

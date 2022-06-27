@@ -16,9 +16,10 @@
   >npm i
 
 - Ha még nincsen fenn a célgépen, akkor telepíteni kell az Angular keretrendszert az `npm i -g @angular/cli` paranccsal  
+- A terminálon be kell lépni a /backend mappába és futtatni az `npm run deploy` parancsot. Ha ez nem működne, akkor az alábbi három műveletet kell megpróbálni:
 - A frontend mappa termináljában ki kell adni az `ng build` parancsot   
 - A _/frontend/dist/frontend_ mappa tartalmát be kell másolni a _/backend/public_ mappába   
-- A terminálon be kell lépni a /backend mappába és futtatni az `npm run build` parancsot 
+- A backend mappa termináljában ki kell adni az `docker-compose up` parancsot
 
 ## **3. Az alkalmazás konfigurálása**
 
@@ -40,6 +41,7 @@ E-mail | Jelszó
 ------------ | -------------
 test@test.test | 123456
 
+Egyelőre az adatfeltöltések vannak levédve belépéssel a  /seed útvonalon. Ezen útvonal tesztjének sikeres futtatása előtt ezt a védelmet le kell venni.
 ## **5. A végpontok dokumentációja**
 
 - Az alábbi URL-t kell beírni a böngészőbe: https://localhost:3000/api-docs

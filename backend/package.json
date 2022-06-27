@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
     "deploy": "cd ../frontend && ng build && cd ../backend && docker-compose up"
   },
   "keywords": [],

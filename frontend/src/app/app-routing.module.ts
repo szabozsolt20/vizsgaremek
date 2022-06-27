@@ -13,6 +13,7 @@ import { MemberComponent } from './page/member/member.component';
 import { OrderComponent } from './page/order/order.component';
 import { ProductEditorComponent } from './page/product-editor/product-editor.component';
 import { ProductComponent } from './page/product/product.component';
+import { SeedsComponent } from './page/seeds/seeds.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { UserComponent } from './page/user/user.component';
 
@@ -73,9 +74,9 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  { // todo: nem kell már
-    path: 'order',
-    component: OrderComponent,
+  {
+    path: 'seed',
+    component: SeedsComponent,
   },
 ];
 

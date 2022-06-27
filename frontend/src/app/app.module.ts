@@ -30,6 +30,7 @@ import { MemberEditorComponent } from './page/member-editor/member-editor.compon
 import { UserComponent } from './page/user/user.component';
 import { UserEditorComponent } from './page/user-editor/user-editor.component';
 import { UnfoldPipe } from './pipe/unfold.pipe';
+import { SeedsComponent } from './page/seeds/seeds.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { UnfoldPipe } from './pipe/unfold.pipe';
     MemberEditorComponent,
     UserComponent,
     UserEditorComponent,
+    SeedsComponent,
   //  UnfoldPipe
   ],
   imports: [

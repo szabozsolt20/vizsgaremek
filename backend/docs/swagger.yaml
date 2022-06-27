@@ -1,143 +1,637 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Könyvtári nyilvántartó - MÉG NINCS ÁTALAKÍTVA!!!
+  title: Könyvtári nyilvántartó
   description: A Könyvtári nyilvántartó REST API dokumentációja
 servers:
   - url: http://localhost:3000
 paths:
-  /person/count:
+  /book:
     get:
-      description: Returns a count of persons
+      description: Returns an array of books
       responses:
         '200':
-          description: Number of persons affected in vaccination, included html code.
-          content:
-            html:
-              schema:
-                type: string
-                # items:
-                #   $ref: '#/components/schemas/Person'
-  /person/vaccinated:
-    get:
-      description: Returns an array of persons
-      responses:
-        '200':
-          description: Number of persons really vaccinated, included html code.
+          description: JSON Array of books
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Person'
-  /person/{person_id}/{vaccine_name}:
-    put:
-      description: Sets the person with given :id vaccinated with :vaccine.
+                  $ref: '#/components/schemas/Book'
+  /book/{book_id}:
+    get:
+      description: Returns a book with the given ID
       parameters:
-        - name: person_id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: vaccine_name
+        - name: book_id
           in: path
           required: true
           schema:
             type: string
       responses:
-        '201':
-          description: Sentence with html response:`<h3>A ${req.params.id} _id-jű személy ${isVaccinated} rendelkezik oltással.</h3>`.
+        '200':
+          description: Book data returned successfully
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Person'
-        # '500':
-        #   description: Internal server error
-        #   content:
-        #     application/json:
-        #       schema:
-        #         $ref: '#/components/schemas/Error'
-  #   post:
-  #     description: Creates a new person
-  #     requestBody:
-  #       required: true
-  #       content:
-  #         application/json:
-  #           schema:
-  #             $ref: '#/components/schemas/Person'
-  #     responses:
-  #       '201':
-  #         description: Person has been created successfully
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Person'
-  #       '400':
-  #         description: Invalid request
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Error'
-  #       '500':
-  #         description: Internal server error
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Error'
-  # /person/{person_id}:
-  #   get:
-  #     description: Returns the person with the given ID
-  #     parameters:
-  #       - name: person_id
-  #         in: path
-  #         required: true
-  #         schema:
-  #           type: string
-  #     responses:
-  #       '200':
-  #         description: Person data returned successfully
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Person'
-  #       '404':
-  #         description: Person with the give ID was not found
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Error'
-  #       '500':
-  #         description: Internal server error
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: '#/components/schemas/Error'
+                $ref: '#/components/schemas/Book'
+        '404':
+          description: Book with the give ID was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Update a book
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        '201':
+          description: Book has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new book
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Book'
+      responses:
+        '201':
+          description: Book has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+        description: Delete book
+        parameters:
+          - in: path
+            name: book_Id
+            schema:
+                type: string
+            required: true
+            description: string id of book to delete
+        responses:
+            200:
+                description: Book that was deleted
+  /borrow:
+    get:
+      description: Returns an array of borrows
+      responses:
+        '200':
+          description: JSON Array of borrows
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Borrow'
+  /borrow/{borrow_id}:
+    get:
+      description: Returns a borrow with the given ID
+      parameters:
+        - name: borrow_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Borrow data returned successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Borrow'
+        '404':
+          description: Borrow with the give ID was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Update a borrow
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Borrow'
+      responses:
+        '201':
+          description: Borrow has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Borrow'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new borrow
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Borrow'
+      responses:
+        '201':
+          description: Borrow has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Borrow'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+        description: Delete borrow
+        parameters:
+          - in: path
+            name: borrow_Id
+            schema:
+                type: string
+            required: true
+            description: string id of borrow to delete
+        responses:
+            200:
+                description: Borrow that was deleted
+  /user:
+    get:
+      description: Returns an array of users
+      responses:
+        '200':
+          description: JSON Array of users
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+  /user/{user_id}:
+    get:
+      description: Returns a user with the given ID
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User data returned successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: User with the give ID was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Update a user
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+        description: Delete user
+        parameters:
+          - in: path
+            name: user_Id
+            schema:
+                type: string
+            required: true
+            description: string id of user to delete
+        responses:
+            200:
+                description: User that was deleted
+  /member:
+    get:
+      description: Returns an array of members
+      responses:
+        '200':
+          description: JSON Array of members
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Member'
+  /member/{member_id}:
+    get:
+      description: Returns a member with the given ID
+      parameters:
+        - name: member_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Member data returned successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+        '404':
+          description: Member with the give ID was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Update a member
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '201':
+          description: Member has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new member
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Member'
+      responses:
+        '201':
+          description: Member has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Member'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+        description: Delete member
+        parameters:
+          - in: path
+            name: member_Id
+            schema:
+                type: string
+            required: true
+            description: string id of member to delete
+        responses:
+            200:
+                description: Member that was deleted
+  /librarian:
+    get:
+      description: Returns an array of librarians
+      responses:
+        '200':
+          description: JSON Array of librarians
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Librarian'
+  /librarian/{librarian_id}:
+    get:
+      description: Returns a librarian with the given ID
+      parameters:
+        - name: librarian_id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Librarian data returned successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Librarian'
+        '404':
+          description: Librarian with the give ID was not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      description: Update a librarian
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Librarian'
+      responses:
+        '201':
+          description: Librarian has been updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Librarian'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      description: Creates a new librarian
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Librarian'
+      responses:
+        '201':
+          description: Librarian has been created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Librarian'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '501':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    delete:
+        description: Delete librarian
+        parameters:
+          - in: path
+            name: librarian_Id
+            schema:
+                type: string
+            required: true
+            description: string id of librarian to delete
+        responses:
+            200:
+                description: Librarian that was deleted
 components:
   schemas:
-    Person:
+    Book:
+      type: object
+      properties:
+        ISBN:
+          type: string
+        author:
+          type: string
+        title:
+          type: string
+        publisher:
+          type: string
+        year:
+          type: number
+        genre:
+          type: string
+        location:
+          type: string
+        active:
+          type: boolean
+    Borrow:
       type: object
       required:
-        - firstName
-        - lastName
-        # - email
+        - date
+        - member_id
+        - book_ids
       properties:
-        firstName:
-          type: string
-        lastName:
-          type: string
-        vaccine:
-          type: object
-          properties:
-            vaccine:
-              type: mongoose.Schema.Types.ObjectId
-            count:
-              type: number
-    Vaccine:
+        date:
+          type: number
+        member_id:
+          type: mongoose.Schema.Types.ObjectId
+        book_ids:
+          type: array
+          items:
+          type: mongoose.Schema.Types.ObjectId
+        active:
+          type: boolean
+    Librarian:
       type: object
       properties:
         name:
           type: string
-        efficiency:
+        username:
+          type: string
+        location:
+          type: number
+        role:
+          type: number
+        phone:
+          type: number
+        active:
+          type: boolean
+    Member:
+      type: object
+      properties:
+        name:
+          type: string
+        uid:
+          type: number
+        mother:
+          type: string
+        birthplace:
+          type: string
+        birthdate:
+          type: string
+        address:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        active:
+          type: boolean
+    User:
+      type: object
+      required:
+        - email
+      properties:
+        email:
+          type: string
+        lastName:
+          type: string
+        firstName:
+          type: string
+        password:
           type: string
     Error:
       type: object
