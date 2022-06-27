@@ -1,1 +1,33 @@
-<p>user-editor works!</p>
+<form #editForm="ngForm" (ngSubmit)="update(item)" *ngIf="item$ | async as item" class=" col-4">
+  <input required [(ngModel)]="item._id" type="hidden" name="id">
+  <div class="form-group">
+    <label for="email" class="form-label, h6">Email</label>
+    <input id="email" name="email" [(ngModel)]="item.email" type="email" class="form-control"
+      email required>
+    <span [hidden]="editForm.controls['email']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="lastName" class="form-label h6">Last name</label>
+    <input id="lastName" name="lastName" [(ngModel)]="item.lastName" type="text" class="form-control"
+    pattern="^[A-Z][a-űA-Ű \d\.\-\(\)]{2,}" required>
+    <span [hidden]="editForm.controls['lastName']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="firstName" class="form-label h6">First name</label>
+    <input id="firstName" name="firstName" [(ngModel)]="item.firstName" type="text" class="form-control" pattern="^[A-Z][a-űA-Ű \d\.\-\(\)]{2,}"
+      required>
+    <span [hidden]="editForm.controls['firstName']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="password" class="form-label h6">Password</label>
+    <input id="password" name="password" [(ngModel)]="item.password" type="text" class="form-control" required>
+    <span [hidden]="editForm.controls['password']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+
+  <button type="submit" [disabled]="editForm.invalid" type="submit" class="btn btn-primary mt-4 w-100">
+    <i class="fa fa-save"> </i>
+  </button>
+  <button [routerLink]="['/user']" (click)="create(item)" type="submit" class="btn btn-info mt-4 w-100">
+    <i class="fa fa-plus-square" aria-hidden="true"> New item </i>
+  </button>
+</form>

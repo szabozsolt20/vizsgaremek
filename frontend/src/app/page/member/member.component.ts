@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-// import { combineLatest } from 'rxjs';
 import { Member } from 'src/app/model/member';
-import { CategoryService } from 'src/app/service/category.service';
 import { ConfigService } from 'src/app/service/config.service';
 import { MemberService } from 'src/app/service/member.service';
 
@@ -16,12 +14,9 @@ export class MemberComponent implements OnInit {
 
   list$ = this.memberService.getAll();
 
-  categories$ = this.categoryService.getAll();
-
   constructor(
     private config: ConfigService,
     private memberService: MemberService,
-    private categoryService: CategoryService, // hogy category-kat be tudjunk szúrni
     private router: Router,
   ) { }
 
@@ -31,14 +26,12 @@ export class MemberComponent implements OnInit {
     this.router.navigate(['/', 'member', 'edit', member._id]);
   }
 
-  // Seed-eléshez itt hagyom lehetőségnek
-  // createCategories(): void {
-  //   combineLatest([ // amikor mindegyik elkészült, összefogja őket
-  //     this.categoryService.create({name: 'Háztartás', description: 'konyhai cuccok'}),
-  //     this.categoryService.create({name: 'Barkács', description: ' barkács cuccok'}),
-  //     this.categoryService.create({name: 'Egészség', description: 'mama cuccok'}),
-  //   ]).subscribe(
-  //     () => console.log('Categories have been created.'),
-  //   );
-  // }
+  startDelete(member_id: string): void {
+    this.memberService.delete(member_id).subscribe({
+      next: deletedItem =>  {alert("Item deleted"); this.list$ = this.memberService.getAll()},
+      error: err => console.error(err),
+    });
+
+  }
+
 }

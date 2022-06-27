@@ -9,11 +9,13 @@ const BorrowSchema = mongoose.Schema({
   member_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'Member',
+    require: true
   },
   book_ids: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Book',
+      require: true
     }
   ],
   active: Boolean
@@ -23,6 +25,6 @@ const BorrowSchema = mongoose.Schema({
   },
 );
 
-// BorrowSchema.plugin(idValidator); próba adatokkal még nem
+BorrowSchema.plugin(idValidator); // próba adatokkal még nem
 
 module.exports = mongoose.model('Borrow', BorrowSchema);

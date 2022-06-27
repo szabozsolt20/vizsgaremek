@@ -3,7 +3,7 @@
   <div class="form-group">
     <label for="name" class="form-label, h6">Name</label>
     <input id="name" name="name" [(ngModel)]="item.name" type="text" class="form-control"
-      pattern="[a-űA-Ű \d\.\-\(\)]{5,}" required>
+      pattern="^[A-Z][a-űA-Ű \d\.\-\(\)]{2,}" required>
     <span [hidden]="editForm.controls['name']?.valid" class="error-message">Please fix the field!</span>
   </div>
   <div class="form-group">

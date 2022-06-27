@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const idValidator = require('mongoose-id-validator'); // "validálja, hogy jó-e az adott id"
 
 const BookSchema = mongoose.Schema({
   ISBN: String,

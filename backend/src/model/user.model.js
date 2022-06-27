@@ -10,10 +10,10 @@ const UserSchema = mongoose.Schema({
     },
     lastName: String,
     firstName: String,
-    address: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Address',
-    },
+    // address: {
+    //     type: mongoose.Schema.Types.ObjectId,
+    //     ref: 'Address',
+    // },
     password: String,
 });
 

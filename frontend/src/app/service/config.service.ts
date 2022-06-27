@@ -13,7 +13,7 @@ export interface IMenuItem {
 export class ConfigService {
 
   sidebarMenu: IMenuItem[] = [
-    {link: '/', title: 'Dashboard', icon: 'home'},
+    {link: '/', title: 'Home', icon: 'home'},
    // {link: '/product', title: 'Products', icon: 'archive'},
     {link: '/book', title: 'Books', icon: 'book'},
     {link: '/borrow', title: 'Borrows', icon: 'upload'},
@@ -32,6 +32,7 @@ export class ConfigService {
 
   bookTableColumns: INgxTableColumn[] = [
     {key: '_id', title: '#'},
+    {key: 'ISBN', title: 'ISBN'},
     {key: 'author', title: 'Author'},
     {key: 'title', title: 'Title'},
     {key: 'publisher', title: 'Publisher'},
@@ -67,6 +68,7 @@ export class ConfigService {
     {key: 'mother', title: 'Mother name'},
     {key: 'birthplace', title: 'Birthplace'},
     {key: 'birthdate', title: 'Birthdate'},
+    {key: 'address', title: 'Address'},
     {key: 'email', title: 'Email'},
     {key: 'phone', title: 'Phone'},
     {key: 'active', title: 'Active'},
@@ -76,7 +78,6 @@ export class ConfigService {
     {key: 'email', title: 'Email'},
     {key: 'lastName', title: 'Last name'},
     {key: 'firstName', title: 'First name'},
-    {key: 'address', title: 'Address'},
     {key: 'password', title: 'Password'},
   ];
 

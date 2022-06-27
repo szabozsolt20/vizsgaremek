@@ -5,5 +5,4 @@ export class User {
   lastName: string = '';
   firstName: string = '';
   password?: string = '';
-  role?: number = 1;
 }

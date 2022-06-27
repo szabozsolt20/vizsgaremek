@@ -1,1 +1,54 @@
-<p>book-editor works!</p>
+<form #editForm="ngForm" (ngSubmit)="update(item)" *ngIf="item$ | async as item" class=" col-4">
+  <input required [(ngModel)]="item._id" type="hidden" name="id">
+  <div class="form-group">
+    <label for="ISBN" class="form-label h6">ISBN</label>
+    <input id="ISBN" name="ISBN" [(ngModel)]="item.ISBN" type="text" class="form-control"  pattern="^\d{7,9}-(\d|\w)$"
+      required>
+    <span [hidden]="editForm.controls['ISBN']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="author" class="form-label, h6">Author</label>
+    <input id="author" name="author" [(ngModel)]="item.author" type="text" class="form-control"
+      pattern="^[A-Z][a-űA-Ű \d\.\-\(\)]{2,}" required>
+    <span [hidden]="editForm.controls['author']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="title" class="form-label h6">Title</label>
+    <input id="title" name="title" [(ngModel)]="item.title" type="text" class="form-control" pattern="^[A-Z][a-űA-Ű ñ\,\d\.\-\(\)]{2,}"
+      required>
+    <span [hidden]="editForm.controls['title']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="publisher" class="form-label h6">Publisher</label>
+    <input id="publisher" name="publisher" [(ngModel)]="item.publisher" type="text" class="form-control" pattern="^[A-Z][a-űA-Ű \d\.\-\(\)]{2,}" required>
+    <span [hidden]="editForm.controls['publisher']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="year" class="form-label h6">Year</label>
+    <input id="year" name="year" [(ngModel)]="item.year" type="text" class="form-control" pattern="\d{0,4}" required>
+    <span [hidden]="editForm.controls['year']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="genre" class="form-label h6">Genre</label>
+    <input id="genre" name="genre" [(ngModel)]="item.genre" type="text" class="form-control" pattern="^[A-Z][a-űA-Ű \|\d\.\-\(\)]{2,}" required>
+    <span [hidden]="editForm.controls['genre']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="location" class="form-label h6">Location</label>
+    <input id="location" name="location" [(ngModel)]="item.location" type="text" class="form-control" pattern="\d{1,2}" required>
+    <span [hidden]="editForm.controls['location']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+  <div class="form-group">
+    <label for="active" class="form-label h6">Active</label>
+    <input id="active" name="active" [(ngModel)]="item.active" type="text" class="form-control" pattern="(true|false)"
+      required>
+    <span [hidden]="editForm.controls['active']?.valid" class="error-message">Please fix the field!</span>
+  </div>
+
+  <button type="submit" [disabled]="editForm.invalid" type="submit" class="btn btn-primary mt-4 w-100">
+    <i class="fa fa-save"> </i>
+  </button>
+  <button [routerLink]="['/book']" (click)="create(item)" type="submit" class="btn btn-info mt-4 w-100">
+    <i class="fa fa-plus-square" aria-hidden="true"> New item </i>
+  </button>
+</form>
