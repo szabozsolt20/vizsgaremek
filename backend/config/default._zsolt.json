@@ -1,7 +1,0 @@
-{
-  "database": {
-    "user": "dbUser",
-    "pass": "QXoi0LIEi2yByKgu",
-    "host": "fapi02-cluster.gkl3gqj.mongodb.net/library?retryWrites=true&w=majority"
-  }
-}
