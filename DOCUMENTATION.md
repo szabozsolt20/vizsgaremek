@@ -1,11 +1,9 @@
 ## **1. Az alkalmazás célja**
 
-Pl.:
 - Az alkalmazás feladata, hogy a egy könyvtár alapadatai nyilvántartásán keresztül demonstrálja az alapvető CRUD megvalósítási lehetőségeket egyszerű webszolgáltások esetén a képzésen elsajátított panelekből építkező megoldások segítségével
 
 ## **2. Az alkalmazás telepítése**
 
-Pl.:
 - Forkolni kell a következő GitHub repository tartalmát: [https://github.com/szabozsolt20/vizsgaremek](https://github.com/szabozsolt20/vizsgaremek)   
 - A célgép egy mappájába le kell klónozni az adott GitHub repository tartalmát:
 >git clone https://github.com/szabozsolt20/vizsgaremek
@@ -24,7 +22,6 @@ Pl.:
 
 ## **3. Az alkalmazás konfigurálása**
 
-Pl.:
 A /frontend/environments mappában át lehet állítani az API-végpont jelenlegi elérési útvonalát:
   - _environment.ts_ állomány: http://127.0.0.1:3000/  
   - _environment.prod.ts_ állomány: http://localhost:3000/ 
@@ -45,8 +42,6 @@ test@test.test | 123456
 
 ## **5. A végpontok dokumentációja**
 
-Pl.:
-Swagger 
 - Az alábbi URL-t kell beírni a böngészőbe: https://localhost:3000/api-docs
 
 ---
@@ -54,7 +49,6 @@ Swagger
 
 ## **Linkek:**  
 
-Pl.:
 - [Felhasználói történet](https://github.com/szabozsolt20/vizsgaremek/blob/main/README.md)
 - [API dokumentáció](https://localhost:3000/api-docs)
 
