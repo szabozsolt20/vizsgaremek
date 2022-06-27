@@ -135,7 +135,7 @@ magas
 rövid
 
 **További fejlesztési lehetőségek:**  
-A projekt célkitűzése az adott körülmények melletti hiánytalan, és tökéletes megvalósítás. - a jövőbeni toovábbfejlesztéssel.😊 Ilyen irányok lehetnek:
+A projekt hosszabbtávú célkitűzése a hiánytalan, és tökéletes megvalósítás. - a jövőbeni az adott körülmények melletti melletti hiányosabb megvalósítások továbbfejlesztéssel.😊 Ilyen irányok lehetnek:
  - kisebb lépésekben a beágyazottsági szintek összetettségének növelésével rugalmasabb adatelérési, és CRUD lehetőségek biztosítása,
  - funkcióbővítés az életszerű üzleti logika megvalósítás irányában,
  - bővebb jogosultsági szintek megvalósítása
@@ -145,6 +145,10 @@ A projekt célkitűzése az adott körülmények melletti hiánytalan, és tök�
 
 ---
 ## Témához kapcsolódó linkek
+[Alkalmazás dokumentációja](https://github.com/szabozsolt20/vizsgaremek/blob/main/DOCUMENTATION.md)
+
+[API dokumentáció](https://localhost:3000/api-docs)
+
 [Útmutató a könyvtárosi munkához](http://www.somogykszr.hu/userfiles/dokumentumok/KSZR_utmutato.pdf)
 
 [Országos Könyvtári Platform](http://www.oszk.hu/sites/default/files/OKP_K%C3%B6vetelm%C3%A9nyjegyz%C3%A9k.pdf)
